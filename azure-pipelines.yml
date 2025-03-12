@@ -7,7 +7,8 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: test
+  demands: myNewCrazyCap -equals 1
 
 steps:
 - task: ArchiveFiles@2

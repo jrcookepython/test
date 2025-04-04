@@ -6,10 +6,6 @@
 trigger:
 - main
 
-pool:
-  name: test
-  demands: myNewCrazyCap -equals 1
-
 steps:
 - task: ArchiveFiles@2
   inputs:
